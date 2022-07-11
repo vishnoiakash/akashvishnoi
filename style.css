@@ -95,11 +95,11 @@ header{
 }
 .footer{
     width: 100vw;
-    height: 30px;
+    height: 20px;
     justify-content: center;
     margin: 0px 0px; 
-    padding: 5px;
-    background-color: black;
+    padding: 10px;
+    background-color: rgb(43, 40, 40);
     color: #fff;
     text-align: center;
     font-family: 'Lucida Sans', 'Lucida Sans Regular', 'Lucida Grande', 'Lucida Sans Unicode', Geneva, Verdana, sans-serif;
@@ -125,7 +125,7 @@ header{
     height: 80%;
 }
 h1{
-   
+    text-align: center;
     font-size: 50px;
     font-family: 'Kanit', sans-serif;
 }
@@ -156,28 +156,29 @@ p{
     margin: 5px 2px;
     border-radius: 50%;
   }
-  
-  /* .fa:hover {
-      opacity: 0.7;
-  }
- 
-  .fa-google {
-    background: #dd4b39;
-  }
-  
-  .fa-linkedin {
-    background: #007bb5;
-  }
-  .fa-instagram {
-    background: #125688;
-  } */
+.social{
+    width: 100%;
+    height: auto;
+    display: flex;
+    align-items: center;
+    flex-direction: row;
+    flex-wrap: wrap;
+    padding: 0px;
+    margin: 20px 0;
+    justify-content:center;
 
-  .social-links a{
-    height: 100px;
-    width: 100px;
-    background-color: antiquewhite;
-    border-radius: 50%;
-    text-align: center;
-    margin : 10px;
-
-  }
+}
+.social-icon
+{   position: relative;
+    height: 40px;
+    width: 40px;
+    border-radius: 100%;
+    padding: 5px;
+    margin-left: 10px;
+    margin-right: 10px;
+    box-shadow: 1px 3px 0px rgb(136, 131, 131);
+    transition: .2s;
+}
+.social-icon:hover{
+transform: scale(1.2);
+} 
