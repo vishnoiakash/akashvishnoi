@@ -162,12 +162,14 @@ transform: scale(1.2);
 
 
 .typewriter{
+    
     padding: 40vh 0;
     color: #fff;
     font-family: 'Kanit', sans-serif;
     overflow: hidden;
     white-space: nowrap; 
     margin: 0 auto; 
+    
     letter-spacing: .15em; 
     animation: 
       typing 5s steps(30, end), step-end infinite;
@@ -237,7 +239,8 @@ transform: scale(1.2);
         flex-direction: column;
     }
     .typewriter{
-        font-size: 2em;
+        font-size: 1.7em;
+    
     }
     p{
         font-size: 15px;
@@ -247,6 +250,11 @@ transform: scale(1.2);
     h1{
         font-size: 30px;
         padding: 20px 0;
+    }
+    #word1::after{
+        content: "/a";
+        white-space: pre;
+
     }
     .text-part li{
         font-size: 15px;
