@@ -16,12 +16,11 @@ a{
 }
 
 header{
-    background: #000;
+    background: rgb(0, 0, 0);
     display: flex;
     justify-content: center ;
     align-items: center;
     flex-direction: row;
-    flex-wrap: wrap;
     padding: 10px 0;
     position: fixed;
     z-index: 10;
@@ -132,7 +131,7 @@ p{
 .text-part li{
     font-size: 25px;
     line-height: 40px;
-    text-align: justify;
+    text-align: left;
 }
 .social{
     width: 100%;
@@ -220,6 +219,17 @@ transform: scale(1.2);
     transform: translate(-50%, -50%);
     text-align: center;
   }
+  .checkbtn{
+    color: white;
+    float: right;
+    margin: 0 40px;
+    font-size: 25px;
+    cursor: pointer;
+    display: none;
+  }
+  #check{
+    display: none;
+  }
 
   @media screen and (max-width: 700px){
 
@@ -264,5 +274,35 @@ transform: scale(1.2);
         width: 5vw;
         margin: 0 5px;
       }
+     
+     .checkbtn{
+        display:block;
+     }
+     .home-area{
+        height: calc(100vh - 80px);
+     }
+     /* .header{
+        height: 100vh;
+     } */
+     .navbar{
+        flex-direction: column;
+        position: fixed;
+        width: 50%;
+        top: 65px;
+        right: -100%;
+        text-align: center;
+        background-color: black;
+        transition: all .5s;
+        
+     }
+     .navbar li{
+        margin: 15px 0;
+    
+
+     }
+     #check:checked ~ .navbar{
+    right: 0;
+
+     }
 
   }
