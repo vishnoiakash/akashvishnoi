@@ -69,16 +69,13 @@ header{
     color: rgb(212, 85, 39);
 }
 .home-area{
-    position: relative;
+    position:relative;
     width: 100%;
     height: 100%;
     background-image: url(images/background.jpg);
     background-repeat: no-repeat;
     background-size : cover;
     background-position: center;
-
-
-
 }
 .about-area, .education-area, .skills-area,  .achievements-area, .contact-area{
 
@@ -90,7 +87,7 @@ header{
     flex-direction: row;
     width: 100%;
     height:auto;
-    padding-top: 50px;
+    padding-top: 20px;
 
 }
 .footer{
@@ -133,20 +130,10 @@ p{
     text-align: center;
 }
 .text-part li{
-    padding-top: 50px;
     font-size: 25px;
-    line-height: 10px;
+    line-height: 40px;
     text-align: justify;
 }
-.fa {
-    padding: 20px;
-    font-size: 30px;
-    width: 30px;
-    text-align: center;
-    text-decoration: none;
-    margin: 5px 2px;
-    border-radius: 50%;
-  }
 .social{
     width: 100%;
     height: auto;
@@ -179,23 +166,18 @@ transform: scale(1.2);
     padding: 40vh 0;
     color: #fff;
     font-family: 'Kanit', sans-serif;
-    overflow: hidden; /* Ensures the content is not revealed until the animation */
-    white-space: nowrap; /* Keeps the content on a single line */
-    margin: 0 auto; /* Gives that scrolling effect as the typing happens */
-    letter-spacing: .15em; /* Adjust as needed */
+    overflow: hidden;
+    white-space: nowrap; 
+    margin: 0 auto; 
+    letter-spacing: .15em; 
     animation: 
-      typing 5s steps(30, end),
-      blink-caret .5s step-end infinite;
+      typing 5s steps(30, end), step-end infinite;
   }
   
   /* The typing effect */
   @keyframes typing {
     from { width: 0 }
     to { width: 100% }
-  }
-  @keyframes blink-caret {
-    from, to { border-color: transparent }
-    50% { border-color: orange; }
   }
 
   .hobby{
@@ -237,4 +219,47 @@ transform: scale(1.2);
     -ms-transform: translate(-50%, -50%);
     transform: translate(-50%, -50%);
     text-align: center;
+  }
+
+  @media screen and (max-width: 700px){
+
+    .hobby{
+        flex-direction: column;
+    }
+    .typewriter{
+        font-size: 2em;
+    }
+    p{
+        font-size: 15px;
+        line-height: 25px;
+        text-align: justify;
+    }
+    h1{
+        font-size: 30px;
+        padding: 20px 0;
+    }
+    .text-part li{
+        font-size: 15px;
+        line-height: 25px ;
+        padding-top: 10px;
+    }
+    .edu-text{
+        padding-top: 10px;
+        font-size: 15px;
+        line-height: 25px;
+    }
+    .text-part h2{
+        font-size: 20px;
+    }
+    .hobby img{
+        height : 60vw;
+        width: 60vw;
+        padding: 5px;
+      }
+      .social-icon{
+        height: 5vw;
+        width: 5vw;
+        margin: 0 5px;
+      }
+
   }
